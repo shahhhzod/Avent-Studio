@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation a {
+	position: relative;
+	color: white !important; 
+	cursor: pointer;
+	text-decoration: none; 
+}
+
+.navigation a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+  color: white;
+	background-color: #93FE62; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+.navigation a:hover:after,
+.navigation a:focus:after {
+	width: 100%; 
+  color: white;
+}
+
+.main-page {
+    background-color: black;
+}
+
+.comment {
+    display: block;
+    margin: 25px auto 0px auto;
+    height: 150px !important;
+    width: 300px;
+    padding: 20px 20px 100px !important;
+    background-color: #dcdcdc;
+    border-radius: 10px !important;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Montserrat";
+    color: #7d7d7d;
+}
+
+
+.main-screen {
+  background-image: url('/img/bg-screen.png');
+  background-repeat: no-repeat;
+  width: auto;
+  height: 736px;
+}
+
+.footer {
+  width: auto;
+  height: 310px;
+  background-color: #E0E0E0;
+}
+
+.txt-grid {
+ text-align: center;
+ padding-top: 150px;
+}
+
+.txt-grid p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  font-family: 'Montserrat';
+  color: #FFFFFF;
+}
+
+.txt-grid span {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 134.09%;
+  font-family: 'Montserrat';
+  color: #FFFFFF;
+}
+
+.txt-grid button {
+  width: 244.42px;
+  font-style: normal;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  line-height: 24px;
+  text-align: center;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 50px;
+  border: none;
+  height: 51px;
+  background: #93FE62;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+}
+
+.header {
+  background-color: #1B1B1B;
+  width: auto;
+  height: 112px;
+}
+
+.header img {
+  margin-top: -60px;
+}
+
+
+.navigation {
+  margin-top: 35px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  font-style: normal;
+  margin: 9px;
+}
+
+
+.navigation li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+.btn-order {
+    height: 45px;
+    margin-top: 250px;
+    width: 187px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 158.47%; 
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    background: #93FE62;
+}
+
+
+.btn_id {
+  height: 45px;
+  background: #93FE62;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 187px;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 158.47%;
+  text-align: center;
+  font-family: 'Montserrat';
+  margin-top: 30px;
+
+}
+
+
+.pop_up {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .pop_up.active {
+    display: block;
+  }
+  
+  .pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .pop_up_body {
+    margin: auto;
+    width: 380px;
+    height: 490px;
+    background: rgba(148, 148, 148, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 30px;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+    position: relative;
+  }
+  
+  .pop_up_body p {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: #ffffff;
+  }
+  
+  .pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    height: 30px;
+    width: 300px;
+    padding: 20px 20px;
+    background-color: #dcdcdc;
+    border-radius: 30px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Montserrat";
+    color: #7d7d7d;
+  }
+  
+  .pop_up_body input:focus {
+    outline: none;
+  }
+  
+  .pop_up_body button {
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    height: 31px;
+    margin: 60px auto 0px auto;
+    border: 2px solid #93FE62;
+    color: #93FE62;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Montserrat";
+    background-color: transparent;
+  }
+  
+  .pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+  }
+
+
+  .txt-footer  {
+    padding-top: 50px;
+  }
+
+  .txt-footer p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat';
+    color: #000000;
+  }
+
+  .txt-footer a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Montserrat';
+    color: #999999;
+    text-decoration: none;
+  }
+
+  .txt-footer li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Montserrat';
+    color: #999999;
+    list-style-type: none;
+  }
+
+ .txt-d  {
+  margin-top: -225px;
+ }
+
+ .txt-d li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Montserrat';
+  color: #999999;
+  list-style-type: none;
+}
+
+.txt-d a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Montserrat';
+  color: #999999;
+  text-decoration: none;
+}
+
+.txt-d p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Montserrat';
+  color: #000000;
+}

@@ -1,16 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <title>Avent Studio | Главная</title>
 </head>
-<body>
+<body class="main-page">
+  <div class="pop_up" id="pop_up">
+    <div class="pop_up_container">
+      <div class="pop_up_body" id="pop_up_body">
+         <form action="telegram.php" method="POST">
+          <input type="text" name="user_name" placeholder="Ваше И.Ф.">
+          <input type="text" name="user_phone" placeholder="Ваш номер телефона">
+          <input class="comment" type="text" name="user_com" placeholder="Добавить комментарий">
+          <button>ОТПРАВИТЬ</button>
+          <div class="pop_up_close" id="pop_up_close">&#10006</div>
+         </form>
+      </div>
+    </div>
+</div> 
+
+
+<div class="header">
+  <div class="container-fluid text-center">
+    <div class="row"> 
+      <div class="col">
+        <img src="/img/logo.svg" alt="">
+      </div>
+      <div class="col">
+        <ul class="navigation"> 
+          <li><a href="" target="_blank">Главная</a></li>
+          <li><a href="" target="_blank">Наши проекты</a></li>
+          <li><a href="" target="_blank">Услуги</a></li>
+          <li><a href="" target="_blank">Блог</a></li>
+       </ul>
+      </div>
+      <div class="col">
+        <a href="">
+          <button class="btn_id" id="open_pop_up">оставить заявку</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-screen">
+  <div class="txt-grid">
+    <p>Передовая IT студия</p>
+    <span>Мы создаем легкие<br>решения<br>сложных задач и проблем</span><br>
+    <button class="btn-1-2">Наши проекты</button>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="txt-footer">
+          <p>Основные ссылки</p>
+          <li><a href="#">Главная</a></li><br>
+          <li><a href="#">Наши проекты</a></li><br>
+          <li><a href="#">Услуги</a></li><br>
+          <li><a href="#">Блог</a></li><br>
+        </div>
+      </div>
+      <div class="col">
+        <div class="txt-footer">
+          <p>Наши проекты</p>
+          <li><a href="#">Avent Games</a></li><br>
+          <li><a href="#">Avent Blog</a></li><br>
+          <li><a href="#">Avent Media </a></li><br>
+          <li><a href="#">Avent Boom</a></li><br>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="txt-d">
+          <p>Социальные сети</p>
+          <li><a href="#">Telegram</a></li><br>
+          <li><a href="#">Instagram</a></li><br>
+          <li><a href="#">Facebook</a></li><br>
+          <li><a href="#">GitHub</a></li><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
    <script src="/js/main.js"></script>
 </body>
 </html>
